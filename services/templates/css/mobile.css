@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+    .productos,
+    .vent_contenidos,
+    .personas {
+        display: inherit;
+        height: auto;
+        padding: 10% 10%;
+    }
+    .producto,
+    .targeta,
+    .persona {
+        margin-top: auto;
+    }
+    .main_section {
+        padding: 4%;
+    }
+    .anunciar {
+        height: auto;
+    }
+    .productos .producto {
+        margin-top: 10px;
+    }
+}

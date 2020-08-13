@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="css/grid.css"> -->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="animacion.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Venta de juegos</title>
+</head>
+
+
+<body>
+
+    <body>
+
+        <!-- <p>hola</p>
+        <span>Soy kevin joel</span>
+        <p>Como te llamas</p>
+        <p>Como te llamas</p>
+        <a href="contacto.html">LINK</a>
+        <img src="/imagenes/auto1.gif" alt="auto1">
+        <img src="/imagenes/auto2.gif" alt="auto2">
+        <img src="/imagenes/giphy.gif" alt="persona1">
+        <script src="/js/componentes.js"></script> -->
+
+        <nav class="fadeDown">
+            <div class="brand_image">
+                <a href="/index">
+                    <img src="https://i.pinimg.com/originals/c2/f1/82/c2f1826b6cb8fd5fb963addc3f7fe65b.png" alt="logo" style="height:17%; width:10%;">
+                </a>
+            </div>
+            <!-- <div class="nav_options">
+                <ul>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="producto.html">Productos y Descripción</a></li>
+                </ul>
+            </div> -->
+        </nav>
+        <br>
+        <br>
+        <h1 style="text-align: center;">
+            <b>
+                HAS TU PAGO POR PAYPAL
+            </b>
+        </h1>
+        <br>
+        <br>
+        <br>
+
+        <div class="conenedor">
+
+            <div class="row_venta">
+                <div class="col-4">
+                    <div class="modulo_pago">
+                        <div class="modulo_pago_imagen"><img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="imagen">
+                        </div>
+                        <h3 style="text-align: center;">Todo de manera SEGURA</h3>
+                        <p>Realiza tu pago mediante tu cuenta de paypal y el juego se te envíara a tu correo electronico.</p>
+                    </div>
+                </div>
+                <!-- <h1>INSERTAR</h1>
+    <form action="" method="POST">
+        {% csrf_token %} NAME: <input type="text" name="subject_name">
+        <br> CATEGORY: <input type="text" name="cate">
+        <br> UBICATION: <input type="text" name="ubi">
+        <br> LOTE: <input type="text" name="lote">
+        <br>
+        <input type="submit" value="ENVIAR">
+        <button type="submit">;)</button>
+
+    </form> -->
+                <div class="col-8">
+                    <div class="modulo_pago">
+                        <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4TJXJ5JRVNNSJ" method="post">
+                            <label for="name">Nombre</label>
+                            <br>
+                            <input type="text" placeholder="" name="item_name" class="data">
+                            <br>
+                            <label for="email">E-mail</label>
+                            <br>
+                            <input type="email" placeholder="" name="email" class="data">
+                            <br>
+                            <label for="telefono">Telefono</label>
+                            <br>
+                            <input type="telefono" placeholder="" name="item_number" class="data">
+                            <input type="submit" class="main_butn" name="submit" value="Confirmar pago">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="pie">
+                <a href="">Terminos y condiciones</a>
+                <a href="mailto:Levindebin@gmail.com">contacto@gmail.com</a>
+            </div>
+        </footer>
+    </body>
+
+</html>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+     :root {
+        --green-color: #2d38cc;
+        --white-color: white;
+        --gris-color: rgb(75, 71, 71);
+        /* Espaciado */
+        --sapace: 10px;
+    }
+    
+    html,
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-size: 15px;
+        font-family: Helvetica;
+    }
+    
+    nav {
+        display: flex;
+        background-color: var(--green-color);
+        padding: 10px;
+        color: var(--white-color);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+    
+    nav li {
+        padding-left: 20px;
+        list-style: none;
+    }
+    
+    nav li a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    nav li a:hover {
+        color: var(--white-color);
+    }
+    /* ------------------------ Main section */
+    
+    .main_section {
+        padding: 10%;
+        text-align: center;
+    }
+    
+    .productos {
+        background-image: url("https://pmtcr.com/wp-content/uploads/2018/06/CurvaAzul2.png");
+        height: 10px;
+        background-size: cover;
+        background-position: center top;
+        padding: 20%;
+        display: flex;
+    }
+    
+    .producto {
+        padding: 70px;
+        margin-top: -50%;
+    }
+    
+    #p_titulo {
+        padding-top: 70px;
+    }
+    
+    .contenedor {
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    .row {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    
+    .row_venta {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 10px;
+        margin-right: 210px;
+        margin-left: 210px;
+        margin-bottom: 210px;
+    }
+    
+    .productDescription {
+        margin: auto;
+    }
+    
+    .col-8 p,
+    h1 {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    
+    .col-4 img {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .producto .contenido {
+        width: 240px;
+        background-color: var(--white-color);
+        padding: 15px;
+        box-shadow: 5px 5px 6px black;
+        /* font-family: 'Chilanka', cursive; */
+        font-size: 20px;
+    }
+    
+    .img_content {
+        text-align: center;
+    }
+    
+    .main_button {
+        background-color: var(--green-color);
+        width: 100%;
+        padding: 10px;
+        font-size: 17px;
+        color: white;
+        border: 0px;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+    
+    .main_button:hover {
+        background-color: #df9c21;
+    }
+    
+    .anunciar {
+        text-align: center;
+        height: 450px;
+        padding-top: 120px;
+        padding: 40px;
+    }
+    
+    .ventajas {
+        margin: 30px;
+        background-size: 30%
+    }
+    
+    .vent_contenidos {
+        display: flex;
+    }
+    
+    .targeta {
+        padding: 40px;
+    }
+    
+    .s_menciones {
+        padding: 40px;
+    }
+    
+    .menciones {
+        text-align: center;
+    }
+    
+    .personas {
+        display: flex;
+    }
+    
+    .persona {
+        margin: 20px;
+        border-radius: 2px;
+        box-shadow: 5px 5px 6px black;
+    }
+    
+    .persona img {
+        width: 100%;
+        /* width: 280px; */
+        border-radius: 5px;
+    }
+    
+    .pie {
+        display: flex;
+        background-color: gray;
+        padding: 10px;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+    }
+    
+    .pie a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .pie a:hover {
+        color: rgb(136, 226, 163);
+    }
+    /* ///////////////////////////// MODULO PAGO */
+    
+    .modulo_pago {
+        background-color: var(--white-color);
+        box-shadow: 0px 0 2px black;
+        padding: 10px;
+    }
+    
+    p,
+    label {
+        font-size: 20px;
+    }
+    /* label {
+    padding: 5px;
+} */
+    
+    .modulo_pago_imagen {
+        max-width: 150px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .modulo_pago input {
+        margin-top: 10px;
+        width: 100%;
+        height: 35px;
+        border-radius: 2px;
+        border: 1px solid;
+        box-sizing: border-box;
+    }
+    
+    .data {
+        margin-top: 10px;
+        width: 100%;
+        height: 35px;
+        border-radius: 2px;
+        border: 1px solid;
+        box-sizing: border-box;
+    }
+    
+    .main_butn {
+        background-color: #2d38cc;
+        color: azure;
+    }
+    
+    .fadeIn {
+        -webkit-animation-duration: 4s;
+        animation-duration: 4s;
+        animation-fill-mode: both;
+        animation-name: fadeIn;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-name: fadeIn;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .fadeDown {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeDown;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-name: fadeDown;
+    }
+    
+    @keyframes fadeDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    
+    .fadeUp {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeUp;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-name: fadeUp;
+    }
+    
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+</style>
+</body>
+
+</html>

@@ -23,8 +23,11 @@ from api.api import UserAPI
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', hello_world),
-    path('services/', serv_views.showTemplate),
-    path('services/create/', serv_views.createSubject),
+    # path('services/', serv_views.showTemplate),
+    path('games/create/', serv_views.createSubject), 
+    path('games/lista/', serv_views.listaGames), 
+    path('games/venta/', serv_views.venta), 
+    path('index/', serv_views.index), 
     # path('services/', serv_views.showTemplate,name='index'),
     # path('services/create', serv_views.createSubject,name='create_services'),
     path('api/user/create', UserAPI.as_view()),

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="css/grid.css"> -->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="animacion.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Venta de cjuegos</title>
+</head>
+
+
+<body>
+
+    <h1>INSERTAR</h1>
+    <form action="" method="POST">
+        {% csrf_token %} NAME: <input type="text" name="subject_name">
+        <br> CATEGORY: <input type="text" name="cate">
+        <br> UBICATION: <input type="text" name="ubi">
+        <br> LOTE: <input type="text" name="lote">
+        <br>
+        <input type="submit" value="ENVIAR">
+        <button type="submit">;)</button>
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <!-- <h1>EDITAR</h1>
+    <form action="" method="POST">EDITAR {% csrf_token %} NAME: <input type="text" name="subject_name">
+        <br> CATEGORY: <input type="text" name="cate">
+        <br> UBICATION: <input type="text" name="ubi">
+        <br> LOTE: <input type="text" name="lote">
+        <br>
+        <input type="submit" value="ENVIAR">
+        <button type="submit">;)</button>
+    </form> -->
+    <nav class="fadeDown">
+        <div class="container">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-8">
+                        <div class="brand_image">
+                            <a href="">
+                                <img src="https://i.pinimg.com/originals/c2/f1/82/c2f1826b6cb8fd5fb963addc3f7fe65b.png" alt="logo" style="height:17%; width:17%;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="nav_options">
+                            <ul>
+                                <!-- <li><a href="">FAQs</a></li> -->
+                                <li id="btn_productos" style="width: 100%;">
+                                    <a href="producto.html" class="btn btn-light btn-lg btn-block">
+                                        <b>PRODUCTOS</b>
+                                    </a>
+                                </li>
+                                <li id="btn_productos" style="width: 100%;">
+                                    <a href="/registroProducto" class="btn btn-primary btn-lg btn-block">
+                                        AGREGAR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main_section fadeIn">
+        <h1>Los juegos más populares de todo el mundo, al precio que todos los quieren.</h1>
+    </div>
+    <section class="vender">
+        <div class="productos">
+            <div class="producto fadeUp">
+                <div class="contenido">
+                    <div class="img_content">
+                        <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/es-es/global/game-info/naked_boxshot_mobile_138233.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <h2>Far Cry 3</h2>
+                    <p>Far Cry 3 es un juego de de mundo abierto de acción y supervivencia en el trópico.</p>
+                    <a href="venta.html">
+
+                        <button href="" class="main_button">Lo quiero</button>
+                    </a>
+                </div>
+            </div>
+            <div class="producto fadeUp">
+                <div class="contenido">
+                    <div class="img_content ">
+                        <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/es-mx/global/game-info/ubicom-assassins_creed_1-search-gameinfo-boxart-348x434_mobile_278344.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <h2>Assassin's C</h2>
+                    <p>Assassin's Creed es un videojuegos de acción-aventura, sigilo y de mundo...</p>
+                    <a href="venta.html">
+
+                        <button href="" class="main_button">Lo quiero</button>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <section class="anunciar">
+        <div class="ventajas">
+            <div class="vent_contenidos">
+                <div class="targeta">
+                    <img src="https://articles-images.sftcdn.net/wp-content/uploads/sites/2/2014/04/Header1.png" alt="targeta1" width="170px" ;>
+                    <h3>LA MEJOR VELOCIDAD DE DESCARGA</h3>
+                    <p>Para una prueba de varios juegos a la vez, la mejor velocidad de descarga</p>
+                </div>
+                <div class="targeta">
+                    <img src="https://i.pinimg.com/originals/b6/34/f6/b634f67701f7d7b04b39f31511444f7d.png" alt="targeta2" width="170px" ;>
+                    <h3>LA MEJOR BIBLIOTECA</h3>
+                    <p>La biblioteca de videojuegos con los juegos más populares del mundo.</p>
+                </div>
+                <div class="targeta">
+                    <img src="https://i.pinimg.com/originals/ef/18/36/ef18361e00816dc357c32f28d7fcc49b.png" alt="targeta3" width="170px" ;>
+                    <h3>OFERTAS CADA DÍA</h3>
+                    <p>Miles de productos hay en el mercado, pero nada como los más populares al mejor precio.</p>
+                </div>
+            </div>
+    </section>
+    <hr/>
+    <section class="s_menciones">
+        <div class="menciones">
+            <h1>MENCIONES</h1>
+            </br>
+            </br>
+            <div class="personas">
+                <div class="persona">
+                    <img src="https://icdn2.digitaltrends.com/image/digitaltrends_es/screen-shot-2019-02-15-at-19-16-58.jpg" alt="persona1" width="100%;">
+                    <h3>Daniel Smith</h3>
+                    <p>La mejor Plataforma de videojuegos con unos magnificos precios, buenisima.</p>
+                </div>
+                <div class="persona">
+                    <img src="https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083390__340.jpg" alt="persona2">
+                    <h3>Juli Suarez</h3>
+                    <p>Excelente servicio para comprar videojuegos, la plataforma mas completa que existe.</p>
+
+                </div>
+                <div class="persona">
+                    <img src="https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/55365cde3787b2187a1f0fbc/impresion-cara.jpg" alt="persona3">
+                    <h3>Nahium Scott</h3>
+                    <p>Tiene una economía de mercado bastante sustancial en la que si se es inteligente.</p>
+
+                </div>
+                <div class="persona">
+                    <img src="https://p1.pxfuel.com/preview/888/622/412/portrait-girl-happy-innocence.jpg" alt="persona4">
+                    <h3>Sakura Kraeven </h3>
+                    <p>El soporte lo he usado poco, pero para cosas serias, si que te contestan al instante.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="pie">
+            <a href="">Terminos y condiciones</a>
+            <a href="mailto:Levindebin@gmail.com">contacto@gmail.com</a>
+        </div>
+    </footer>
+    <style>
+        /*
+#  Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·
+#  Â·Â·_______________
+#  Â·/Â·___/Â·___/Â·___/
+#  /Â·/__(__Â·Â·|__Â·Â·)Â·
+#  \___/____/____/Â·Â·
+#  Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·Â·
+*/
+        
+        @import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+         :root {
+            --green-color: #2d38cc;
+            --white-color: white;
+            --gris-color: rgb(75, 71, 71);
+            /* Espaciado */
+            --sapace: 10px;
+        }
+        
+        html,
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-size: 15px;
+            font-family: Helvetica;
+        }
+        
+        nav {
+            display: flex;
+            background-color: var(--green-color);
+            padding: 10px;
+            color: var(--white-color);
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            display: flex;
+        }
+        
+        nav li {
+            padding-left: 20px;
+            list-style: none;
+        }
+        
+        nav li a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        nav li a:hover {
+            color: var(--white-color);
+        }
+        /* ------------------------ Main section */
+        
+        .main_section {
+            padding: 10%;
+            text-align: center;
+        }
+        
+        .productos {
+            background-image: url("https://pmtcr.com/wp-content/uploads/2018/06/CurvaAzul2.png");
+            height: 10px;
+            background-size: cover;
+            background-position: center top;
+            padding: 20%;
+            display: flex;
+        }
+        
+        .producto {
+            padding: 70px;
+            margin-top: -50%;
+        }
+        
+        #p_titulo {
+            padding-top: 70px;
+        }
+        
+        .contenedor {
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        .row {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+        
+        .row_venta {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 10px;
+            margin-right: 210px;
+            margin-left: 210px;
+            margin-bottom: 210px;
+        }
+        
+        .productDescription {
+            margin: auto;
+        }
+        
+        .col-8 p,
+        h1 {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+        
+        .col-4 img {
+            width: 100%;
+            padding: 10px;
+        }
+        
+        .producto .contenido {
+            width: 240px;
+            background-color: var(--white-color);
+            padding: 15px;
+            box-shadow: 5px 5px 6px black;
+            /* font-family: 'Chilanka', cursive; */
+            font-size: 20px;
+        }
+        
+        .img_content {
+            text-align: center;
+        }
+        
+        .main_button {
+            background-color: var(--green-color);
+            width: 100%;
+            padding: 10px;
+            font-size: 17px;
+            color: white;
+            border: 0px;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        
+        .main_button:hover {
+            background-color: #df9c21;
+        }
+        
+        .anunciar {
+            text-align: center;
+            height: 450px;
+            padding-top: 120px;
+            padding: 40px;
+        }
+        
+        .ventajas {
+            margin: 30px;
+            background-size: 30%
+        }
+        
+        .vent_contenidos {
+            display: flex;
+        }
+        
+        .targeta {
+            padding: 40px;
+        }
+        
+        .s_menciones {
+            padding: 40px;
+        }
+        
+        .menciones {
+            text-align: center;
+        }
+        
+        .personas {
+            display: flex;
+        }
+        
+        .persona {
+            margin: 20px;
+            border-radius: 2px;
+            box-shadow: 5px 5px 6px black;
+        }
+        
+        .persona img {
+            width: 100%;
+            /* width: 280px; */
+            border-radius: 5px;
+        }
+        
+        .pie {
+            display: flex;
+            background-color: gray;
+            padding: 10px;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+        }
+        
+        .pie a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .pie a:hover {
+            color: rgb(136, 226, 163);
+        }
+        /* ///////////////////////////// MODULO PAGO */
+        
+        .modulo_pago {
+            background-color: var(--white-color);
+            box-shadow: 0px 0 2px black;
+            padding: 10px;
+        }
+        
+        p,
+        label {
+            font-size: 20px;
+        }
+        /* label {
+    padding: 5px;
+} */
+        
+        .modulo_pago_imagen {
+            max-width: 150px;
+            width: 100%;
+            margin: auto;
+        }
+        
+        .modulo_pago input {
+            margin-top: 10px;
+            width: 100%;
+            height: 35px;
+            border-radius: 2px;
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+        
+        .data {
+            margin-top: 10px;
+            width: 100%;
+            height: 35px;
+            border-radius: 2px;
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+        
+        .main_butn {
+            background-color: #7ACC2D;
+        }
+        
+        .fadeIn {
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            animation-fill-mode: both;
+            animation-name: fadeIn;
+            -webkit-animation-fill-mode: both;
+            -webkit-animation-name: fadeIn;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .fadeDown {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeDown;
+            -webkit-animation-fill-mode: both;
+            -webkit-animation-name: fadeDown;
+        }
+        
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        
+        .fadeUp {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeUp;
+            -webkit-animation-fill-mode: both;
+            -webkit-animation-name: fadeUp;
+        }
+        
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    </style>
+</body>
+
+</html>

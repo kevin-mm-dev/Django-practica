@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <title>Index</title>
+</head>
+
+<body>
+    <h1>Mi segundo template en Django</h1>
+    <p>Este es un ejemplo de un template en Django que me va a servir para mostrar como hacer un <i>render</i>
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <form action="">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Categoria</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Lote</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Precio</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <button class="btn btn-primary" type="submit" style="width: 100%;">SAVE</button>
+                </form>
+
+            </div>
+            <div class="col-4">Holaa my frand</div>
+        </div>
+    </div>
+
+
+
+
+    <p>
+        {% for item in response %} {{ item.id }} | {{ item.name }} | {{ item.category }} | {{ item.ubication }} | {{ item.lote }}
+        <br> {% endfor %}
+    </p>
+
+</body>
+
+
+
+<script>
+</script>
+
+</html>

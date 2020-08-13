@@ -3,9 +3,17 @@ from services.models import Products
 
 
 # Create your views here.
-def showTemplate(request):
+def index(request):
     response = Products.objects.all()
     return render(request, 'index.html', {'response' : response})
+
+def listaGames(request):
+    response = Products.objects.all()
+    return render(request, 'listaGames.html', {'response' : response})
+
+def venta(request):
+    response = Products.objects.all()
+    return render(request, 'venta.html', {'response' : response})
 
 def createSubject(request):
     response = Products.objects.all()
